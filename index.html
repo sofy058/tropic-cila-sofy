@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <title>Tropicália-Sofy</title>
+    <title>Tropicália-sofy</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
@@ -14,7 +14,6 @@
 
 <body>
     <header class=" p-5">
-
         <nav class="container d-flex justify-content-between align-items-center">
             <img src="img/logo.png" class="nav-img " loading="lazy">
             <ul class="nav mt-5">
@@ -24,22 +23,21 @@
             </ul>
 
             <div id="acessibilidade" class="menu-acessibilidade">
-                <button id="botao-acessibilidade" class="btn btn-primary rotacao-botao fw-bold">Acessibilidade</button>
-                <div id="opcoes-acessibilidade" class="opcoes-acessibilidade apresenta-lista ">
-                    <button id="aumentar-fonte" class="btn btn-primary fw-bold">A +</button>
-
-                    <button id="diminuir-fonte" class="btn btn-primary fw-bold">A -</button>
-
+                <button id="botao-acessibilidade" class="btn btn-primary fw-bold rotacao-botao" aria-expanded="false">acessibilidade</button>
+                <div id="opcoes-acessibilidade" class="opcoes-acessibilidade apresenta-lista">
+                    <button id="aumentar-fonte" class="btn btn-primary fw-bold" aria-label="Aumentar
+                    o tamanho da fonte">A+</button>
+                    <button id="diminuir-fonte" class="btn btn-primary fw-bold" aria-label="Diminuir
+                    o tamanho da fonte">A-</button>
+                    <button id="alterna-contraste" class="btn btn-primary fw-bold"> <i class="bi
+                    bi-shadows"></i></button>
                 </div>
             </div>
-
         </nav>
-
     </header>
 
 
     <main class="container my-5">
-
         <section id="inicio" class="my-5">
             <div class="inicio-fundo d-flex justify-content-between align-items-center">
                 <div class="esquerda-conteudo">
@@ -138,5 +136,3 @@
     <script src="script.js"></script>
 
 </body>
-
-</html>
